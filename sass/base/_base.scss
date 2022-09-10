@@ -1,0 +1,20 @@
+@use '../utils/' as u;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: u.$clr-neutral-900;
+}
+
+input {
+    display: none;
+    &:checked + label {
+        color: u.$clr-neutral-100;
+        background-color: u.$clr-neutral-300;
+    }
+}
+
+a {
+    text-decoration: none;
+}
