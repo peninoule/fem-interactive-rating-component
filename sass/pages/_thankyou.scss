@@ -1,0 +1,31 @@
+@use '../utils/' as u;
+
+.ty-card {
+    @include u.card;
+    align-items: center;
+    max-width: 40.5ch;
+    &__result {
+        @include u.box-shadow;
+        background-color: lighten(u.$clr-neutral-500, 5%);
+        color: u.$clr-primary-500;
+        display: block;
+        padding: .5rem 1rem;
+        border-radius: 100vmax;
+        font-family: u.$ff-primary;
+        font-size: u.$fs-secondary;
+        margin: 1.5rem 0 .5rem 0;
+        @media (min-width: 50em) {
+            margin: 2rem 0 1rem 0;
+        }
+    }
+    &__heading {
+        @include u.card__heading;
+    }
+    &__body {
+        @include u.card__body;
+        text-align: center;
+        @media (min-width: 50em) {
+            padding-bottom: 1rem;
+        }
+    }
+}

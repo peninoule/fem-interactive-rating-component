@@ -89,7 +89,7 @@ a {
 }
 .form__field {
   box-shadow: 3px 5px 10px -7px black;
-  background-color: #303a46;
+  background-color: #2f3946;
   border-radius: 100%;
   padding: 0.75rem;
   display: inline-block;
@@ -98,6 +98,7 @@ a {
   text-align: center;
   line-height: 1;
   color: hsl(216deg, 12%, 54%);
+  font-weight: 700;
 }
 .form__field:hover {
   cursor: pointer;
@@ -125,28 +126,33 @@ a {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-.card {
+.container {
   box-shadow: 3px 5px 10px -7px black;
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: hsl(213deg, 20%, 18%);
   padding: 1.5rem 1.5rem;
-  border-radius: 3%;
+  border-radius: 5%;
   max-width: 45ch;
   line-height: 1.4rem;
 }
 @media (min-width: 50em) {
-  .card {
+  .container {
     max-width: 50ch;
     padding: 2rem 2rem 1.5rem 2rem;
     line-height: 1.5rem;
   }
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
 .card__pastille {
   box-shadow: 3px 5px 10px -7px black;
-  background-color: #303a46;
+  background-color: #2f3946;
   border-radius: 100%;
   padding: 0.75rem;
   display: inline-block;
-  display: inline-block;
+  align-self: flex-start;
   padding: 0.75rem;
 }
 @media (min-width: 50em) {
@@ -168,11 +174,55 @@ a {
   color: hsl(217deg, 12%, 63%);
 }
 
-.card__content {
+.hidden {
+  display: none;
+  margin-inline: auto;
+  padding-top: 1rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: red;
+}
+
+.ty-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  max-width: 40.5ch;
+}
+.ty-card__result {
+  box-shadow: 3px 5px 10px -7px black;
+  background-color: #2f3946;
+  color: hsl(25deg, 97%, 53%);
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 100vmax;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  margin: 1.5rem 0 0.5rem 0;
+}
+@media (min-width: 50em) {
+  .ty-card__result {
+    margin: 2rem 0 1rem 0;
+  }
+}
+.ty-card__heading {
+  padding: 1rem 0 0 0;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.ty-card__body {
+  padding: 1rem 0 0 0;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  color: hsl(217deg, 12%, 63%);
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .ty-card__body {
+    padding-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

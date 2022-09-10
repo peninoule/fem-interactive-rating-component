@@ -1,0 +1,28 @@
+@use '../utils/' as u;
+
+.card {
+    @include u.card;
+    &__pastille {
+     @include u.pastille;
+     align-self: flex-start;
+     padding: .75rem;
+     @media (min-width: 50em) {
+        margin-bottom: 1rem;
+     }
+    } 
+    &__heading {
+        @include u.card__heading;
+    }
+    &__body {
+        @include u.card__body;
+    }
+}
+
+.hidden {
+    display: none;
+    margin-inline: auto;
+    padding-top: 1rem;
+    font-family: u.$ff-primary;
+    font-weight: u.$fw-700;
+    color: red;
+}

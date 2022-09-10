@@ -1,5 +1,24 @@
 @use './variables' as v;
 
+@mixin card {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin card__heading {
+    @include padding;
+    font-family: v.$ff-primary;
+    font-size: 1.5rem;
+    font-weight: v.$fw-700;
+    color: v.$clr-neutral-100;
+}
+
+@mixin card__body {
+    @include padding;
+    font-family: v.$ff-primary;
+    font-size: v.$fs-secondary;
+    color: v.$clr-neutral-200;
+}
 
 @mixin padding {
     padding: 1rem 0 0 0;    
