@@ -74,7 +74,7 @@ input {
 }
 input:checked + label {
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(216deg, 12%, 54%);
+  background-color: hsl(25deg, 97%, 53%);
 }
 
 a {
@@ -103,7 +103,7 @@ a {
 .form__field:hover {
   cursor: pointer;
   color: hsl(0deg, 0%, 100%);
-  background-color: hsl(25deg, 97%, 53%);
+  background-color: hsl(216deg, 12%, 54%);
 }
 .form__btn {
   box-shadow: 3px 5px 10px -7px black;

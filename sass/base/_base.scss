@@ -11,7 +11,7 @@ input {
     display: none;
     &:checked + label {
         color: u.$clr-neutral-100;
-        background-color: u.$clr-neutral-300;
+        background-color: u.$clr-primary-500;
     }
 }
 
